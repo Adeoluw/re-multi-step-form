@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    height: 2000px;
+    background-color: rgb(193, 248, 229);
+    scroll-behavior: smooth;
+}
+
+main{
+    width: 900px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+}
+
+
+#side-con{
+    width: 26%;
+    padding: 10px;
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+}
+
+.icon{
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: none;
+    width: 95%;
+    cursor: pointer;
+
+}
+
+.icon :hover{
+    color: navy;
+}
+
+.side-text{
+    line-height: 2px;
+    border: none;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.num{
+    border: 1px solid ;
+    width: 40px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+
+.selection-con{
+    display: none;
+}
+
+
+.info-con{
+    padding: 16px 50px;
+    line-height: 10px;
+    
+}
+
+#personal-info-form{
+    padding-top: 20px;
+    font-size: small;
+}
+
+#personal-info-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info-input{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 38px;
+    border-radius: 5px;
+    width: 395px;
+    padding-left: 5px;
+}
+
+#info-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+#info-nav button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 163);
+    color: white;
+}
+
+#info-nav button:active{
+    background-color: white;
+    color: black;
+}
+
+.plan{
+    border: 1px solid black;
+    width: 120px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 2px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.plan:hover{
+   border: 1px solid hsl(243, 100%, 62%);
+}
+
+.plans{
+    display: flex;
+    margin-top: 40px;
+    width: 500px;
+}
+
+.plan-text{
+    margin-top: 50px;
+}
+
+.duration{
+    height: 35px;
+    width: inherit;
+    margin-top: 25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    background-color:hsl(229, 24%, 87%);
+}
+
+.plan-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    width: 500px;
+}
+
+.plan-nav button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 163);
+    color: white;   
+}
+
+
+.Add-on-con{
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+    display: none;
+}
+
+.Addon{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 430px;
+   padding: 10px 20px;
+    height: 80px;
+    line-height: 1px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Addon label{
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.price{
+    margin-top: 17px;
+}
+
+.Add-on-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 500px;}
+
+.Add-on-nav button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 163);
+    color: white;   
+    }
+
+.summary-con{
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+    display: none;
+}
+
+.summaries{
+    height: 185px;
+    border: 1px solid black;
+    width: 385px;
+    border-radius: 5px;
+}
+
+
+#plan-sum{
+    width: inherit;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0px;
+
+}
+
+#total{
+    height: 37px;
+    width: 385px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#summary-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 500px;
+}
+
+#summary-nav button{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 163);
+    color: white;   
+}
+
+.info-invisibility{
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+    display: none;
+}
+
+.info-visibility{
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+    display: block;
+}
+
+.selection-invisibility{
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+    display: none;
+}
+
+.selection-visibility{
+    display: block;
+    padding: 16px 50px;
+    line-height: 10px;
+    width: 74%;
+}
+
+.Addon-invisibility{
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+    display: none;
+}
+
+.Addon-visibility{
+    display: block;
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+}
+
+.summary-invisibility{
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+    display: none;
+}
+
+.summary-visibility{
+    display: block;
+    padding: 20px 50px;
+    line-height: 10px;
+    width: 74%;
+}
+
+.summaries{
+    padding: 10px;
+}
+
+#plan-sum a{
+    margin-top: -3px;
+    font-size: smaller;
+}
+
+.plan-price{
+    margin-right: 35px;
+    margin-top: 28px;
+}
+
+.change-plan{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+ a:hover{
+    color: blue;
+}
+
+.Addon-sum div{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1px;
+    display: none;
+}
+
+
+
+.picked-online-service{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1px;
+    display: none;
+}
+
+.invisibility{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1px;
+}
+
+.visibility{
+    justify-content: space-between;
+    line-height: 1px;
+    display: block;
+}

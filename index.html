@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- Design for the sidebar -->
+        <div id="side-con">
+                <div id="side-icons">
+                 <div class="icon">
+                    <div class="num"><p>1</p></div>
+                    <div class="side-text">
+                        <p>STEP 1</p>
+                        <h4>YOUR INFO</h4>
+                    </div>
+                 </div>
+                 <div class="icon">
+                    <div class="num"><p>2</p></div>
+                    <div class="side-text">
+                        <p>STEP 2</p>
+                        <h4>SELECT PLAN</h4>
+                    </div>
+                 </div>
+                 <div class="icon">
+                    <div class="num"><p>3</p></div>
+                    <div class="side-text">
+                        <p>STEP 3</p>
+                        <h4>ADD-0NS</h4>
+                    </div>
+                 </div>
+                 <div class="icon">
+                    <div class="num"><p>4</p></div>
+                    <div class="side-text">
+                        <p>STEP 4</p>
+                        <h4>SUMMARY</h4>
+                    </div>
+                 </div>
+                </div>
+        </div>
+
+        <!-- Design for Form Area -->
+        <div class="info-con">
+            <div id="info-intro">
+                <h2>Personal Info</h2>
+                <p>Please provide your name, email address, and phone number.</p>
+            </div>
+            <div id="personal-info-form">
+                <form action="" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name"  placeholder="Afolabi Adeoluwa"
+                    class="personal-info-input">
+
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="e.g: yourname@gmail.com" class="personal-info-input">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="e.g. +2348123456789" class="personal-info-input">
+                </form>
+            </div>
+            <div id="info-nav">
+                <button id="info-next">Next Step</button>
+            </div>
+        </div>
+
+        <!-- Design for plan area -->
+        <div class="selection-con">
+            <div id="selection-intro">
+                <h2>Select your plan</h2>
+                <p>You have the option of monthly or yearly billing</p>
+            </div>
+            <div class="plans">
+                <div class="plan">
+                    <img src="./assets/images/icon-arcade.svg" alt="Arc">
+                    <div class="plan-text">
+                        <h4>Arcade</h4>
+                        <p>$9/mo</p>
+                    </div>
+                </div>
+                <div class="plan">
+                    <img src="./assets/images/icon-advanced.svg" alt="icon-advanced">
+                    <div class="plan-text">
+                        <h4>Advanced</h4>
+                        <p>$12/mo</p>
+                    </div>
+                </div>
+                <div class="plan">
+                        <img src="./assets/images/icon-pro.svg" alt="icon-pro">
+                        <div class="plan-text">
+                            <h4>Pro</h4>
+                            <p>$15/mo</p>
+                        </div>
+                </div>
+            </div>
+            <div class="duration">
+                <p>Monthly</p>
+                <img src="./assets/images/icon-checkmark.svg" alt="">
+                <p>Yearly</p>
+            </div>
+            <div class="plan-nav">
+                <button id="selection-prev">Go Back</button>
+                <button id="selection-next">Next Step</button>
+            </div>
+        </div>
+
+
+        <!-- ?\Design for ADD-ON Area -->
+        <div class="Add-on-con">
+            <div class="Add-on-intro">
+                <h2>Pick add-ons</h2>
+                <p>Add-ons help enhance your gaming experience</p>
+            </div>
+            <div class="Add-ons">
+                <div class="Addon">
+                    <input type="checkbox" name="online-service" id="Oservice">
+                    <label for="online-service">
+                        <h4>Online service</h4>
+                        <p>Access to multiplayer games</p>
+                    </label>
+                    <div class="price">
+                        <p>$1/mo</p>
+                    </div>
+                </div>
+
+                <div class="Addon">
+                    <input type="checkbox" name="larger-storage" id="larger-storage">
+                    <label for="larger-storage">
+                        <h4>Larger storage</h4>
+                        <p>Extra 1TB of cloud save</p>
+                    </label>
+                    <div class="price">
+                        <p>$2/mo</p>
+                    </div>
+                </div>
+
+                <div class="Addon" id="id-for-customisation">
+                    <input type="checkbox" name="customization" id="customization">
+                    <label for="customization">
+                        <h4>Customizable profile</h4>
+                        <p>Custom theme on your profile</p>
+                    </label>
+                    <div class="price">
+                        <p>$2/mo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Add-on-nav">
+                <button id="Add-on-prev">Go Back</button>
+                <button id="Add-on-next">Next Step</button>
+            </div>     
+        </div>
+
+
+        <!-- Design for summary section -->
+        <div class="summary-con">
+            <div class="summary-intro">
+                <h2>Finishing up</h2>
+                <p>Double check everything looks OK before confirming</p>
+            </div>
+            <div class="summaries">
+                <div id="plan-sum">
+
+                </div>
+                <hr>
+                <div class="Addon-sum">
+                    <div class="picked-online-service">
+                        <div>
+                            <p>Online service</p>
+                        </div>
+                        <div>
+                            <p>+$1/mo</p>
+                        </div>
+                    </div>
+                    <div class="picked-larger-storage">
+                        <div>
+                            <p>Larger storage</p>
+                        </div>
+                        <div>
+                            <p>+$2/mo</p>
+                        </div>
+                    </div>
+                    <div class="picked-customizable-profile">
+                        <div>
+                            <p>Customizable profile</p>
+                        </div>
+                        <div>
+                            <p>+$2/mo</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="total">
+
+            </div>
+            <div id="summary-nav">
+                <button id="summary-prev">Go Back</button>
+                <button id="summary-next">Confirm</button>
+            </div>
+        </div>
+    </main>
+    <script src="./App.js"></script>
+</body>
+</html>
